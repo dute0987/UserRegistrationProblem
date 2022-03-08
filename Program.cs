@@ -33,18 +33,30 @@ namespace Detail
             //else
                 /Console.WriteLine("Pattern not Matched");
 
-            UC_3_Email UC3 = new UC_3_Email();
-            Console.WriteLine("Enter Your Email");
+            //UC_3_Email UC3 = new UC_3_Email();
+            //Console.WriteLine("Enter Your Email");
+            //string value = Console.ReadLine();
+            //bool match = UC3.ValidateEmail(value);
+
+            //if (match)
+            //{
+                //Console.WriteLine("Patterns Matched");
+
+            //}
+            //else
+                //Console.WriteLine("Pattern Not Matched");
+
+            UC_5_PasswardRule1 UC5 = new UC_5_PasswardRule1();
+            Console.WriteLine("Enter Your Passward");
             string value = Console.ReadLine();
-            bool match = UC3.ValidateEmail(value);
+            bool match = UC5.ValidateChar(value);
 
             if (match)
             {
-                Console.WriteLine("Patterns Matched");
-
+                Console.WriteLine("Pattern Matched ");
             }
             else
-                Console.WriteLine("Pattern Not Matched");
+                Console.WriteLine("Pattern not Matched");
 
         }
     }
