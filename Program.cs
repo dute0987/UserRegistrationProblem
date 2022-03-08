@@ -46,17 +46,29 @@ namespace Detail
             //else
                 //Console.WriteLine("Pattern Not Matched");
 
-            UC_5_PasswardRule1 UC5 = new UC_5_PasswardRule1();
-            Console.WriteLine("Enter Your Passward");
+            //UC_5_PasswardRule1 UC5 = new UC_5_PasswardRule1();
+            //Console.WriteLine("Enter Your Passward");
+            //string value = Console.ReadLine();
+            //bool match = UC5.ValidateChar(value);
+
+            //if (match)
+            //{
+                //Console.WriteLine("Pattern Matched ");
+            //}
+            //else
+                //Console.WriteLine("Pattern not Matched");
+
+            UC_6_OneUpperCase UC6 = new UC_6_OneUpperCase();
+            Console.WriteLine("Enter Your Passwaed");
             string value = Console.ReadLine();
-            bool match = UC5.ValidateChar(value);
+            bool match = UC6.ValidateUpper(value);
 
             if (match)
             {
-                Console.WriteLine("Pattern Matched ");
+                Console.WriteLine("Pattern Matched");
             }
             else
-                Console.WriteLine("Pattern not Matched");
+                Console.WriteLine("Pattern Not Matched");
 
         }
     }
