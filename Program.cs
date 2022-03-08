@@ -70,20 +70,32 @@ namespace Detail
             /else
                 //Console.WriteLine("Pattern Not Matched");
 
-             UC_7_OneNumericNumber UC7 = new UC_7_OneNumericNumber();    
-            Console.WriteLine("Enter Your Passward");
-            string value =Console.ReadLine();
-            bool match = UC7.ValidateNumeric(value);
+            //UC_7_OneNumericNumber UC7 = new UC_7_OneNumericNumber();    
+            //Console.WriteLine("Enter Your Passward");
+            //string value =Console.ReadLine();
+            //bool match = UC7.ValidateNumeric(value);
+
+            //if (match)
+            //{
+                //Console.WriteLine("Pattern Matched");
+
+            //}
+            //else
+            //{
+                //Console.WriteLine("Pattern not Matched");
+            //}
+
+            UC_8_SpecialChar UC8 = new UC_8_SpecialChar();
+            Console.WriteLine("Enter your Passward");
+            string value = Console.ReadLine();
+            bool match = UC8.ValidateChar(value);
 
             if (match)
             {
                 Console.WriteLine("Pattern Matched");
-
             }
             else
-            {
-                Console.WriteLine("Pattern not Matched");
-            }
+                Console.WriteLine("Pattern Not Matched");
 
         }
     }
