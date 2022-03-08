@@ -58,17 +58,32 @@ namespace Detail
             //else
                 //Console.WriteLine("Pattern not Matched");
 
-            UC_6_OneUpperCase UC6 = new UC_6_OneUpperCase();
-            Console.WriteLine("Enter Your Passwaed");
-            string value = Console.ReadLine();
-            bool match = UC6.ValidateUpper(value);
+            //UC_6_OneUpperCase UC6 = new UC_6_OneUpperCase();
+            //Console.WriteLine("Enter Your Passwaed");
+            //string value = Console.ReadLine();
+            //bool match = UC6.ValidateUpper(value);
+
+            //if (match)
+            //{
+                //Console.WriteLine("Pattern Matched");
+            //}
+            /else
+                //Console.WriteLine("Pattern Not Matched");
+
+             UC_7_OneNumericNumber UC7 = new UC_7_OneNumericNumber();    
+            Console.WriteLine("Enter Your Passward");
+            string value =Console.ReadLine();
+            bool match = UC7.ValidateNumeric(value);
 
             if (match)
             {
                 Console.WriteLine("Pattern Matched");
+
             }
             else
-                Console.WriteLine("Pattern Not Matched");
+            {
+                Console.WriteLine("Pattern not Matched");
+            }
 
         }
     }
