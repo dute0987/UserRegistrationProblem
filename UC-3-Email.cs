@@ -9,7 +9,7 @@ namespace Detail
 {
     public class UC_3_Email
     {
-        public static string EmailPattern = "^[a-z]{3}*[@]*[a-z]{2}*[.]*[co]$";
+        public static string EmailPattern = @"^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
 
         public bool ValidateEmail(string EmailID)
         {
